@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	setlocale(LC_ALL, "Portuguese");
+	int ops;
+	
+	printf("Escolha uma das seguintes opções\n\
+\t1\tSoma\n\t2\tMédia\n\t3\tMenor\n\t4\tMaior\n");
+	scanf("%d", &ops);
+	
+	switch (ops){
+		case 1:
+			printf("Soma\n");
+			break;
+		case 2:
+			printf("Média\n");
+			break;
+		case 3:
+			printf("Menor\n");
+			break;
+		case 4:
+			printf("Maior\n");
+			break;
+		default:
+			printf("Digite umoperação válida\n");
+		
+	}
+	
+	return 0;
+}
