@@ -5,19 +5,13 @@
 
 int main(int argc, char *argv[]) {
 	
-	float S, N1, N2;
+	float N;
 
-
-	printf("Digite o primeiro numero\n");
-	scanf("%f", &N1);
-	printf("Digite o segundo numero\n");
-	scanf("%f", &N2);
-	S = N1 + N2;
-	if(S > 10)
-		printf("%f", S);
-
-
-	
+	printf("Digite um numero\n");
+	scanf("%f", &N);
+	if(N > 20){
+		printf("%.3f e maior que 20\n", N);
+	}
 	
 	system("PAUSE");
 	return 0;

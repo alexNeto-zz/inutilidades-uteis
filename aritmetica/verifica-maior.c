@@ -10,38 +10,33 @@
     int N[5];
     int x, i;
     
-    printf("digite 5 números\n");
+    printf("digite 5 nï¿½meros\n");
  
-    for(i = 0; i < 5; i++)   
-    {
+    for(i = 0; i < 5; i++) {
        scanf("%d", &N[i] );
     }
     i = 1;
     x = N[0];
  
-    while(i < 5) 
-    {
-        if (N[i] > x)
-        {
+    while(i < 5) {
+        if (N[i] > x) {
            x = N[i];
         }
         i++;
     }
  
-    printf("\n O maior número que voce digitou foi %d .\n", x);
+    printf("\n O maior nï¿½mero que voce digitou foi %d .\n", x);
     
     i = 1;
     x = N[0];
     
-    while(i < 5) 
-    {
-        if(N[i] < x)
-        {
+    while(i < 5) {
+        if(N[i] < x) {
            x = N[i];
         }
         i++;
     }
-    printf("\n O menor número que voce digitou foi %d .\n", x);
+    printf("\n O menor nï¿½mero que voce digitou foi %d .\n", x);
     
     system("pause");
     return 0;

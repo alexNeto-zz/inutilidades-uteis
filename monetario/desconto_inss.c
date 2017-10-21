@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
 
 int main(int argc, char *argv[]) {
 	setlocale(LC_ALL, "Portuguese");
@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 float Salario;
 
 	
-	printf("Digite o salário bruto\n");
+	printf("Digite o salï¿½rio bruto\n");
 	scanf("%f", &Salario);
 	
 	if(Salario <= 600)

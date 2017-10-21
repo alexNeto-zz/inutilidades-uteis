@@ -13,7 +13,7 @@ int Idade;
 	scanf("%d", &Idade);
 	
 	if(Idade < 16)
-		printf("Não eleitor\n");
+		printf("Nï¿½o eleitor\n");
 		
 		
 	else if(Idade >= 16 && Idade < 18 || Idade > 65)
@@ -21,9 +21,7 @@ int Idade;
 	
 			
 	else
-		printf("Eleitor obrigatório\n");
-	
-	
+		printf("Eleitor obrigatï¿½rio\n");
 	
 	system("PAUSE");
 	return 0;
