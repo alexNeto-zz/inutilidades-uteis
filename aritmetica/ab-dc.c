@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 	
 	printf("A media dos numeros e: %.3f \n", S);
 	
-	
   system("PAUSE");	
   return 0;
 }
