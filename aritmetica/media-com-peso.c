@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
   
   int A, B;
   float F;
+
   printf("Digite a nota \"A\"");
   scanf("%d", &A);
   printf("Digite a nota \"B\"");

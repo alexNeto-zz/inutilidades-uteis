@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int main()
-{
+int main() {
+
     setlocale(LC_ALL, "Portuguese");
 
     int N;
@@ -11,6 +11,7 @@ int main()
 
     printf("Digite um código do pedido\n");
     scanf("%d", &N);
+    
     printf("Digite a quantidade\n");
     scanf("%f", &Q);
 

@@ -8,14 +8,14 @@ int main(int argc, char *argv[]) {
 	
 	int N1, N2, N3, Maior, Intermediario, Menor;
 	
-	printf("Apenas números diferentes\n");
-	printf("Digite o primeiro número\n");
+	printf("Apenas nÃºmeros diferentes\n");
+	printf("Digite o primeiro nÃºmero\n");
 	scanf("%d", &N1);
 	
-	printf("Digite o segundo número\n");
+	printf("Digite o segundo nÃºmero\n");
 	scanf("%d", &N2);
 	
-	printf("Digite o primeiro número\n");
+	printf("Digite o primeiro nÃºmero\n");
 	scanf("%d", &N3);
 	
 	if(N1 < N2 && N1 < N3){
@@ -60,6 +60,8 @@ int main(int argc, char *argv[]) {
 		}
 			
 	}
+
+	printf("%d, %d, %d", Menor, Intermediario, Maior);
 		
 	system("pause");
 	return 0;

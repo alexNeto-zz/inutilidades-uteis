@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	//setlocale(LC_ALL, "Portuguese");
+int main() {
 
 	int N1, N2, N3;
 
 	printf("Apenas números diferentes\n");
+
 	printf("Digite o primeiro número\n");
 	scanf("%d", &N1);
 
@@ -24,14 +23,12 @@ int main(int argc, char *argv[]) {
 		else
 			printf("%d, %d, %d\n", N1, N3, N2);
 	}
-
 	else if(N2 < N1 && N2 < N3){
 		if(N1 < N3)
 			printf("%d, %d, %d\n", N2, N1, N3);
 		else
 			printf("%d, %d, %d\n", N2, N3, N1);
-	}
-	else{
+	} else {
 		if(N1 < N2)
 			printf("%d, %d, %d\n", N3, N1, N2);
 		else

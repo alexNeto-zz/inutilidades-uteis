@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
+
 	int mes;
 	
-	printf("Digite um número entre 1 e 12\n");
+	printf("Digite um nÃºmero entre 1 e 12\n");
 	scanf("%d", &mes);
 	
 	switch (mes){
@@ -18,7 +19,7 @@ int main(int argc, char *argv[]) {
 			printf("fevereiro\n");
 			break;
 		case 3:
-			printf("março\n");
+			printf("marÃ§o\n");
 			break;
 		case 4:
 			printf("abril\n");
@@ -48,8 +49,7 @@ int main(int argc, char *argv[]) {
 			printf("dezembro\n");
 			break;
 		default:
-			printf("Digite um mes válido (1 a 12)\n");
-		
+			printf("Digite um mes vÃ¡lido (1 a 12)\n");
 	}
 	
 	return 0;

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
+
 	int ops;
 	
-	printf("Escolha uma das seguintes opções\n\
-\t1\tSoma\n\t2\tMédia\n\t3\tMenor\n\t4\tMaior\n");
+	printf("Escolha uma das seguintes opÃ§Ãµes\n\t1\tSoma\n\t2\tMÃ©dia\n\t3\tMenor\n\t4\tMaior\n");
 	scanf("%d", &ops);
 	
 	switch (ops){
@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 			printf("Soma\n");
 			break;
 		case 2:
-			printf("Média\n");
+			printf("MÃ©dia\n");
 			break;
 		case 3:
 			printf("Menor\n");
@@ -25,9 +25,8 @@ int main(int argc, char *argv[]) {
 			printf("Maior\n");
 			break;
 		default:
-			printf("Digite umoperação válida\n");
-		
+			printf("Digite umoperaÃ§Ã£o vÃ¡lida\n");	
 	}
-	
+	system("pause");
 	return 0;
 }

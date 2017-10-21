@@ -2,15 +2,13 @@
 #include <stdlib.h>
 #include <locale.h>
 
+int main() {
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
 	setlocale(LC_ALL, "Portuguese");
 	
 	int valor;
 	
-	printf("digite um número de 1 a 12\n ");
+	printf("digite um nÃºmero de 1 a 12\n ");
 	scanf("%d", &valor);
 	
 	switch (valor){
@@ -50,7 +48,7 @@ int main(int argc, char *argv[]) {
 		case 12:
 			printf("31");
 			break;
-		default:printf("Digite um número entre 1 e 12");
+		default:printf("Digite um nÃºmero entre 1 e 12");
 	}
 
 

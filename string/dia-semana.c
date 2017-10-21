@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
 	setlocale(LC_ALL, "Portuguese");
 	int dia;
 	
-	printf("Digite um número entre 1 e 12\n");
+	printf("Digite um nÃºmero entre 1 e 12\n");
 	scanf("%d", &dia);
 	
-	switch (dia){
+	switch (dia) {
 		case 1:
 			printf("Domingo\n");
 			break;
@@ -18,7 +17,7 @@ int main(int argc, char *argv[]) {
 			printf("Segunda-feira\n");
 			break;
 		case 3:
-			printf("Terça-feira\n");
+			printf("TerÃ§a-feira\n");
 			break;
 		case 4:
 			printf("Quarta-feira\n");
@@ -34,8 +33,7 @@ int main(int argc, char *argv[]) {
 			break;
 		
 		default:
-			printf("Digite um dia válido (1 a 7)\n");
-		
+			printf("Digite um dia vÃ¡lido (1 a 7)\n");
 	}
 	
 	return 0;

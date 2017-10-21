@@ -11,7 +11,7 @@ int main()
     printf("Digite um número de 1 a 10\n");
     scanf("%d", &N);
 
-    switch (N){
+    switch (N) {
         case 1:
             printf("Um");
             break;

@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
 
-	int N;
+	int numero;
 
-	printf("Digite um numero inteiro\n");
-	scanf("%d", &N);
-	if(N % 10 == 0 || N % 5 == 0 || N % 2 == 0)
-		printf("O número %d é divisível por 10, 5 ou 2\n", N);
+	printf("Digite um nÃºmero inteiro\n");
+	scanf("%d", &numeroN);
+	if(numero % 10 == 0 || numero % 5 == 0 || numero % 2 == 0)
+		printf("O nÃºmero %d Ã© divisÃ­vel por 10, 5 ou 2\n", numero);
 	else
-		printf("O número %d não é divisível por 10, 5 nem por 2\n", N);
+		printf("O nÃºmero %d nÃ£o Ã© divisÃ­vel por 10, 5 nem por 2\n", numero);
 	
 	system("pause");	
 	return 0;

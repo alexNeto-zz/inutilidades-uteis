@@ -1,28 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	/*
-	crie uma calculadora usando a instrução switch,  que pergunte 
-	qual das operações básicas quer fazer (soma, divisão, subtração e multiplicação),
-	em seguida peça os dois números emostre o resultado
-	da operação matematica entre eles
-	*/
+int main() {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
 	char operacao;
 	float N1, N2, s;
 	
-	printf("Escolha a oparação [+, -, *, /]: \n");
+	printf("Escolha a oparaÃ§Ã£o [+, -, *, /]: \n");
 	scanf("%c", &operacao);
 	
-	printf("Digite o primeiro número: \n");
+	printf("Digite o primeiro nÃºmero: \n");
 	scanf("%f", &N1);
 	
-	printf("Digite o segundo número: \n");
+	printf("Digite o segundo nÃºmero: \n");
 	scanf("%f", &N2);
 	
 	switch (operacao){
@@ -45,12 +38,12 @@ int main(int argc, char *argv[]) {
 				printf("%.2f / %.2f = %.2f\n", N1, N2, s);
 			}
 			else
-				printf("Você não pode dividir por 0\n");
+				printf("VocÃª nÃ£o pode dividir por 0\n");
 			
 			
 			break;
 		default:
-			printf("Você digitou uma operação inválida");
+			printf("Vocï¿½ digitou uma operaÃ§Ã£o invÃ¡lida");
 		
 	}
 	

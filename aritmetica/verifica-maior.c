@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <locale.h>
 
+ int main() {
 
- int main(int argc, char *argv[])
- {
     setlocale(LC_ALL, "Portuguese");
 
     int N[5];
     int x, i;
     
-    printf("digite 5 n�meros\n");
+    printf("digite 5 números\n");
  
     for(i = 0; i < 5; i++) {
        scanf("%d", &N[i] );
     }
+
     i = 1;
     x = N[0];
  
@@ -25,7 +25,7 @@
         i++;
     }
  
-    printf("\n O maior n�mero que voce digitou foi %d .\n", x);
+    printf("\n O maior número que você digitou foi %d .\n", x);
     
     i = 1;
     x = N[0];
@@ -36,7 +36,7 @@
         }
         i++;
     }
-    printf("\n O menor n�mero que voce digitou foi %d .\n", x);
+    printf("\n O menor número que você digitou foi %d .\n", x);
     
     system("pause");
     return 0;

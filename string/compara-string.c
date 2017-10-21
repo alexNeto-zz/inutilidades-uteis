@@ -4,27 +4,23 @@
 #include <locale.h>
 #include <string.h>
 
+int main() {
 
-int main(int argc, char *argv[]) {
 	setlocale(LC_ALL, "Portuguese");
+
 	int resp;
 	char capital[25];
-	char* resposta1 = "Brasília";
-
+	char* resposta1 = "BrasÃ­lia";
 	
-	
-	printf("Qual é a capital do Brasil?\nAcentos fazem a diferença\n");
+	printf("Qual Ã© a capital do Brasil?\nAcentos fazem a diferenÃ§a\n");
 	scanf("%s", &capital);
 	
 	resp = strcmp(capital, resposta1);
 
 	if(resp <0)
-		printf("Parabéns, você acertou\n");	
+		printf("ParabÃ©ns, vocÃª acertou\n");	
 	else
-		printf("Você errou!\n");
-		
-		
-	
+		printf("VocÃª errou!\n");
 	
 	system("pause");
 	return 0;

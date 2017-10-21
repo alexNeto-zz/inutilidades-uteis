@@ -1,51 +1,45 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
-	
-
-            float mesada;
-            float compra;
-            int resposta;
+    
+    float mesada;
+    float compra;
+    int resposta;
         
-        
-        printf("Qual é o valor da sua mesada?");
-        scanf("%f", &mesada);
-        printf("O que deseja fazer?\n");
-        printf("1 - comprar\n2 - comprar apenas o necessário\n");
-        scanf("%d", &resposta);
-        switch(resposta){
-            case 1:
-            	while (mesada > 0){
-            		printf("Qual o valor da compra?\n");
-					if(mesada > 0){
-					
-            		printf("Você ainda tem R$ %.2f\n", mesada);  
-            		scanf("%f", &compra);  
+    printf("Qual ï¿½ o valor da sua mesada?");
+    scanf("%f", &mesada);
+    printf("O que deseja fazer?\n");
+    printf("1 - comprar\n2 - comprar apenas o necessï¿½rio\n");
+    scanf("%d", &resposta);
+    switch(resposta) {
+        case 1:
+        	while (mesada > 0) {
+          		printf("Qual o valor da compra?\n");
+				if(mesada > 0) {			
+            		printf("VocÃª ainda tem R$ %.2f\n", mesada);  
+                    scanf("%f", &compra);           		
             		
-            		
-            		if(compra > mesada){
-                    printf("Não possui dinheiro suficiente\n");
+            		if(compra > mesada) {
+                        printf("NÃ£o possui dinheiro suficiente\n");
                     }
                     
-                    if(compra <= mesada)
-                     mesada -= compra;
-					}            	
-                }
-                
-                if(mesada <= 0){
-                    printf("Você não tem mais dinheiro!\n");
-                }
+                    if(compra <= mesada){
+                        mesada -= compra;
+                    }
+				}            	
+            }    
+            if(mesada <= 0) {
+                printf("VocÃª nÃ£o tem mais dinheiro!\n");
+            }
             break;     
-            case 2:
-            	printf("opção 2 selecionada. apenas o necessário. saldo: R$ 0.00");
-                break;
-            default:
-               
-                break;
-        }
+        case 2:
+          	printf("opï¿½ï¿½o 2 selecionada. apenas o necessï¿½rio. saldo: R$ 0.00");
+            break;
+        default:
+            break;
     }
-
+}

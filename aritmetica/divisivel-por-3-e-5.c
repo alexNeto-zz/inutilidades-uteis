@@ -2,22 +2,18 @@
 #include <stdlib.h>
 #include <locale.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
+int main() {
 	
-	
-	int N;
-
-	//definindo o idioma:
 	setlocale(LC_ALL, "Portuguese");
+
+	int N;
+	
 	printf("Digite um numero inteiro\n");
 	scanf("%d", &N);
 	if(N % 3 == 0 && N % 5 == 0)
-		printf("O n˙mero %d È divisÌvel por 3 e por 5.\n", N);
+		printf("O n√∫mero %d √© divis√≠vel por 3 e por 5.\n", N);
 	else
-		printf("O numero %d n„o È divisÌvel por 3 e por 5.\n", N);
-	
+		printf("O n√∫mero %d n√£o √© divis√≠vel por 3 e por 5.\n", N);
 	
 	system("pause");
 	return 0;

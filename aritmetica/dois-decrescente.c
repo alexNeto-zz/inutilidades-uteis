@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+	
 	setlocale(LC_ALL, "Portuguese");
 	
 	int N1, N2;
 	
-	printf("Apenas números diferentes\n");
-	printf("Digite o primeiro número\n");
+	printf("Apenas nÃºmeros diferentes\n");
+	printf("Digite o primeiro nÃºmero\n");
 	scanf("%d", &N1);
 	
-	printf("Digite o segundo número\n");
+	printf("Digite o segundo nÃºmero\n");
 	scanf("%d", &N2);
 	
 	if(N1 < N2)

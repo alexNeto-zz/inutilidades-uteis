@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int main() {
 
-int main(int argc, char *argv[]) {
-	
-int Idade;
+	int Idade;
 
-	
 	printf("Digite a idade do nadador\n");
 	scanf("%d", &Idade);
+	
 	if(Idade < 5)
 		printf("Idade minima nao atingida\n");
 	else if(Idade >= 5 && Idade <= 7)
@@ -23,11 +21,8 @@ int Idade;
 	else if(Idade >= 18)
 		printf("Categoria: Adulto\n");
 	else 
-		printf("Digite apenas numeros inteiros\n");
-
+		printf("Digite apenas números inteiros\n");
 	
-	
-	
-	system("PAUSE");
+	system("pause");
 	return 0;
 }

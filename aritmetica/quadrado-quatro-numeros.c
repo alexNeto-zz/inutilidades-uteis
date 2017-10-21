@@ -2,23 +2,20 @@
 #include <stdlib.h>
 #include <math.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
-	
-	
+		
 	float A, B, C, D, AQ, BQ, CQ, DQ;
 
-
-	printf("Digite quatro números");
+	printf("Digite quatro nÃºmeros");
 	scanf("%f %f %f %f", &A, &B, &C, &D);
 
 	CQ = pow(C, 2);
-	if(CQ >= 1000){
+	if(CQ >= 1000) {
 		printf("%.2f\n", CQ);
-	}
-	else{
+	} else {
 		AQ = pow(A, 2);
 		BQ = pow(B, 2);;
 		DQ = pow(D, 2);;

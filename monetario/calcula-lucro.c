@@ -1,30 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
 	
-float Produto, lucro;
-
+	float Produto, lucro;
 	
-	printf("Digite o preço do produto\n");
+	printf("Digite o preÃ§o do produto\n");
 	scanf("%f", &Produto);
 	
-	if(Produto <= 20){
+	if(Produto <= 20) {
 		lucro = (Produto * .45) + Produto;
-		printf("O Preço da venda será de: R$ %.2f\n", lucro);
-	}
-	else{
+		printf("O PreÃ§o da venda serÃ¡ de: R$ %.2f\n", lucro);
+	} else {
 		lucro = (Produto * .30) + Produto; 
-		printf("O Preço da venda será de: R$ %.2f\n", lucro);
+		printf("O PreÃ§o da venda serÃ¡ de: R$ %.2f\n", lucro);
 	}
-	
-
-	
-	
-	
-	system("PAUSE");
+		
+	system("pause");
 	return 0;
 }

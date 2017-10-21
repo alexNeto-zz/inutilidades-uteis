@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+int main() {
+
 	setlocale(LC_ALL, "Portuguese");
+	
 	int ops;
 	
-	printf("Escolha uma das seguintes opções\n\
-\t1\tÓtimo\n\
+	printf("Escolha uma das seguintes opï¿½ï¿½es\n\
+\t1\tÃ“timo\n\
 \t2\tBom\n\
 \t3\tRegular\n\
 \t4\tRuim\n");
-
 	scanf("%d", &ops);
-		printf("Você escolheu \t");
+		
+	printf("VocÃª escolheu \t");
 	
 	switch (ops){
 		case 1:
-			printf("Ótimo\n");
+			printf("Ã“timo\n");
 			break;
 		case 2:
 			printf("Bom\n");
@@ -31,7 +32,6 @@ int main(int argc, char *argv[]) {
 			break;
 		default:
 			printf("Nulo\n");
-		
 	}
 	
 	return 0;

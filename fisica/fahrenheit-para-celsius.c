@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
+int main() {
+
   float F, C;
   
   printf("Qual a temperatura em F\n");
@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
   C = 5 * (F - 32)/9;
   printf("%f", C);
   
-  
-  system("PAUSE");	
+  system("pause");	
   return 0;
 }
