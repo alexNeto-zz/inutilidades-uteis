@@ -5,39 +5,39 @@
 
 int main(){
 
-int codPedido, quantPedido;
+    int codPedido, quantPedido;
 
-int camisetaBQuant, camisetaCQuant, moletonQuant;
-int calcaQuant, agasalhoQuant, boneQuant;
-int camisetaBQuantTotal = 0, camisetaCQuantTotal = 0, moletonQuantTotal = 0;
-int calcaQuantTotal = 0, agasalhoQuantTotal = 0, boneQuantTotal = 0;
-int totalQuantPedido;
+    int camisetaBQuant, camisetaCQuant, moletonQuant;
+    int calcaQuant, agasalhoQuant, boneQuant;
+    int camisetaBQuantTotal = 0, camisetaCQuantTotal = 0, moletonQuantTotal = 0;
+    int calcaQuantTotal = 0, agasalhoQuantTotal = 0, boneQuantTotal = 0;
+    int totalQuantPedido;
 
-int i, k, j = 3;
+    int i, k, j = 3;
 
-float totalEmReais;
-float mediaEmReais;
-float totalPedido;
-float camisetaBranca;
-float camisetaColorida;
-float moleton, calca;
-float agasalho, bone;
+    float totalEmReais;
+    float mediaEmReais;
+    float totalPedido;
+    float camisetaBranca;
+    float camisetaColorida;
+    float moleton, calca;
+    float agasalho, bone;
 
     for(i = 0; i < j; i++){
-    //ints //
-    camisetaBQuant = 0;
-    camisetaCQuant = 0;
-    moletonQuant = 0;
-    calcaQuant = 0;
-    agasalhoQuant = 0;
-    boneQuant = 0;
-    // floats //
-    camisetaBranca = 0;
-    camisetaColorida = 0;
-    moleton = 0;
-    calca = 0;
-    agasalho = 0;
-    bone = 0;
+        //ints //
+        camisetaBQuant = 0;
+        camisetaCQuant = 0;
+        moletonQuant = 0;
+        calcaQuant = 0;
+        agasalhoQuant = 0;
+        boneQuant = 0;
+        // floats //
+        camisetaBranca = 0;
+        camisetaColorida = 0;
+        moleton = 0;
+        calca = 0;
+        agasalho = 0;
+        bone = 0;
 
         for(k = 0;;){
 
@@ -64,7 +64,6 @@ float agasalho, bone;
                 break;
             }
 
-
             printf("Digite a quantidade\n");
             scanf("%d", &quantPedido);
 
@@ -74,49 +73,42 @@ float agasalho, bone;
                     camisetaBQuantTotal += quantPedido;
                     camisetaBQuant += quantPedido;
                     camisetaBranca += quantPedido * 7;
-                break;
+                    break;
 
                 case 2:
                     camisetaCQuantTotal += quantPedido;
                     camisetaCQuant += quantPedido;
                     camisetaColorida += quantPedido * 9;
-                break;
+                    break;
 
                 case 3:
                     moletonQuantTotal += quantPedido;
                     moletonQuant += quantPedido;
                     moleton += quantPedido * 17;
-                break;
+                    break;
 
                 case 4:
                     calcaQuantTotal += quantPedido;
                     calcaQuant += quantPedido;
                     calca += quantPedido * 12;
-                break;
+                    break;
 
                 case 5:
                     agasalhoQuantTotal += quantPedido;
                     agasalhoQuant += quantPedido;
                     agasalho += quantPedido * 25;
-                break;
+                    break;
 
                 case 6:
                     boneQuantTotal += quantPedido;
                     boneQuant += quantPedido;
                     bone += quantPedido * 5;
-                break;
+                    break;
 
                 default:
-                break;
-
+                    break;
             }
-
         }
-
-
-
-
-
     }
 
     printf("\n\n\n\n\n\nRelatorio: %d pedidos realizados com sucesso\n", j);
@@ -127,7 +119,7 @@ float agasalho, bone;
 \tCalça\t\t\t%dUNs\n\
 \tAgasalho\t\t%dUNs\n\
 \tBoné\t\t\t%dUNs\n", camisetaBQuantTotal, camisetaCQuantTotal, moletonQuantTotal, calcaQuantTotal, agasalhoQuantTotal, boneQuantTotal);
-
+    
     totalQuantPedido = camisetaBQuantTotal + camisetaCQuantTotal + moletonQuantTotal + calcaQuantTotal + agasalhoQuantTotal + boneQuantTotal;
 
     printf("Total de itens vendidos: %dUNs\n", totalQuantPedido);
@@ -136,10 +128,6 @@ float agasalho, bone;
 
     printf("Média por pedido R$ %.2f\n", mediaEmReais);
     printf("Valor total das vendas R$ %.2f\n", totalEmReais);
-
-
-
-
 
     return 0;
 }

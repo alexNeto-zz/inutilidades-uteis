@@ -8,14 +8,14 @@ int main(){
 
 	int i, j, soma = 0;
 		
-		printf("Digite o fim da somatória\n");
-		scanf("%d", &j);
-	for (i = 1; i <= j; ++i)
-	{
+	printf("Digite o fim da somatÃ³ria\n");
+	scanf("%d", &j);
+	
+	for (i = 1; i <= j; ++i){
 		soma += i;	
-
 	}
-	printf("O resultado da soma é:\t%d\n", soma);	
+
+	printf("O resultado da soma Ã©:\t%d\n", soma);	
 	
 	return 0;
 	}
