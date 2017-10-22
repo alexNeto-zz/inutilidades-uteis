@@ -32,12 +32,12 @@ int main(){
             maisLeve = peso;
             codLeve = codCartao;
         }
-
     }
 
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     printf("Boi mais pesado\n%d com %.2fkg\n", codPesado, maisPesado);
     printf("Boi mais leve\n%d com %.2fkg\n", codLeve, maisLeve);
-    	return 0;
+        
+    return 0;
 }

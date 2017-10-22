@@ -16,9 +16,7 @@ int main(){
 	printf("Qual a quantidade de andares do prédio?\t");
 	scanf("%d", &andares);
 
-
 	for(i = 0; i >= 0 && i <= andares; i++){
-
         if(i == 0)
             printf("Andar terreo '('T')'\n");
         else
@@ -46,14 +44,9 @@ int main(){
 
             dentro -= sairam;
         }
-
     }
 
     printf("%d pessoas vão descer\n", dentro);
 
-
-
-
-
-		return 0;
+    return 0;
 }
