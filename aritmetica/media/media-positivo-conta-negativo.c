@@ -1,34 +1,34 @@
+#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
 
-	setlocale(LC_ALL, "Portuguese");
+  int i, positivo, negativo;
+  float numero, media;
+  positivo = 0;
+  negativo = 0;
 
-	int i, positivo, negativo;
-	float numero, media;
-	positivo = 0;
-	negativo = 0;
-	
-	for(i = 0; i < 40; i++) {
+  for (i = 0; i < 40; i++) {
+    printf("Digite um número:\t");
+    scanf("%f", &numero);
 
-		printf("Digite um número:\t");
-		scanf("%f", &numero);
+    if (numero > 0) {
+      positivo++;
+      media += numero;
+    } else {
+      negativo++;
+    }
+  }
 
-		if (numero > 0) {
-			positivo++;
-			media += numero;
-		} else {
-			negativo++;
-		}
-	}
+  media /= positivo;
 
-	media /= positivo;
-
-	printf("A média dos valores POSITIVOS digitados é de: %.2f\n\
+  printf(
+      "A média dos valores POSITIVOS digitados é de: %.2f\n\
 A quantidade de números negativos digitador é de: %d\n\
-",media, negativo );
+",
+      media, negativo);
 
-    return 0;
+  return 0;
 }

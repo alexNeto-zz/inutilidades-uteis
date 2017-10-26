@@ -2,16 +2,15 @@
 #include <stdlib.h>
 
 int main() {
+  float mm, in;
 
-	float mm, in;
+  printf("Digite a medida em polegadas\n");
+  scanf("%f", &in);
 
-	printf("Digite a medida em polegadas\n");
-	scanf("%f", &in);
+  mm = in * 25.4;
 
-	mm = in * 25.4;
-	
-	printf("%fmm\n",mm );
-  
-  system("pause");	
+  printf("%fmm\n", mm);
+
+  system("pause");
   return 0;
 }

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-  
   int A, B;
   float F;
 
@@ -10,10 +9,9 @@ int main(int argc, char *argv[]) {
   scanf("%d", &A);
   printf("Digite a nota \"B\"");
   scanf("%d", &B);
-  F = ((A * 3) + (B * 7))/10;
+  F = ((A * 3) + (B * 7)) / 10;
   printf("A nota sera %.2f\n", F);
-  
-  
-  system("PAUSE");	
+
+  system("PAUSE");
   return 0;
 }

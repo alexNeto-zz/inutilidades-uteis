@@ -1,23 +1,20 @@
+#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
-int main(){
+int main() {
+  setlocale(LC_ALL, "Portuguese");
 
-	setlocale(LC_ALL, "Portuguese");
+  int i, j, soma = 0;
 
-	int i, j, soma = 0;
-		
-	printf("Digite o fim da somatória\n");
-	scanf("%d", &j);
-	
-	for (i = 1; i <= j; ++i){
-		soma += i;	
-	}
+  printf("Digite o fim da somatória\n");
+  scanf("%d", &j);
 
-	printf("O resultado da soma é:\t%d\n", soma);	
-	
-	return 0;
-	}
+  for (i = 1; i <= j; ++i) {
+    soma += i;
+  }
 
+  printf("O resultado da soma é:\t%d\n", soma);
 
+  return 0;
+}

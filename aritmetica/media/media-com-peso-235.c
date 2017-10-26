@@ -14,10 +14,10 @@ int main(int argc, char *argv[]) {
   printf("Digite a nota \"C\"\n");
   scanf("%d", &C);
 
-  F = ((A * 2) + (B * 3) + (C * 5))/10;
+  F = ((A * 2) + (B * 3) + (C * 5)) / 10;
 
   printf("A nota sera %.2f\n", F);
 
-  system("pause");	
+  system("pause");
   return 0;
 }
