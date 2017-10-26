@@ -5,13 +5,11 @@
 int main() {
   int codPedido, quantPedido;
 
-  int camisetaCQuant, moletonQuant;
-  int calcaQuant, agasalhoQuant, boneQuant;
   int camisetaBQuantTotal = 0, camisetaCQuantTotal = 0, moletonQuantTotal = 0;
   int calcaQuantTotal = 0, agasalhoQuantTotal = 0, boneQuantTotal = 0;
   int totalQuantPedido;
 
-  int i, k, j = 3;
+  int i, j = 3;
 
   float totalEmReais = 0;
   float mediaEmReais;
@@ -20,11 +18,11 @@ int main() {
   for (i = 0; i < j; i++) {
     // ints //
     int camisetaBQuant = 0;
-    camisetaCQuant = 0;
-    moletonQuant = 0;
-    calcaQuant = 0;
-    agasalhoQuant = 0;
-    boneQuant = 0;
+    int camisetaCQuant = 0;
+    int moletonQuant = 0;
+    int calcaQuant = 0;
+    int agasalhoQuant = 0;
+    int boneQuant = 0;
     // floats //
     float camisetaBranca = 0;
     float camisetaColorida = 0;
@@ -33,7 +31,7 @@ int main() {
     float agasalho = 0;
     float bone = 0;
 
-    for (k = 0;;) {
+    for (int k = 0;;) {
       printf("Digite o código do produto\n(digite 0 para sair)\n");
       scanf("%d", &codPedido);
 

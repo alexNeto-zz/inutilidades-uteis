@@ -48,7 +48,7 @@ int main() {
   printf("\n A maior idade foi %d anos.\n", maiorIdade);
   printf("\n A menor idade foi %d anos.\n", menorIdade);
   printf("\n A média de salário é %.2f anos.\n", media);
-  printf("\n A quantidade de mulheres com salário menos que R$ 100 é de\n",
+  printf("\n A quantidade de mulheres com salário menos que R$ 100 é de %d\n",
          quantMenos100);
 
   return 0;

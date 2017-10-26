@@ -11,7 +11,7 @@ int main() {
   int Sexo, Idade;
 
   printf("Digite seu nome:\n");
-  scanf("%s", &Nome);
+  fgets(Nome, 50, stdin);
 
   printf("%s qual é o seu sexo?\n1\tMasculino\n2\tFeminino\n", Nome);
   scanf("%d", &Sexo);

@@ -35,12 +35,12 @@ int main() {
         printf("Erro\nApenas \"S\" e \"N\" são suportados\n");
         i--;
     }
-    scanf("%c");
+    gets();
   }
 
   total = sim + nao;
   int escolha = 0;
-  while (1 == 1) {
+  while (1) {
     printf(
         "\n\n\ndeseja ver o resultado:\n1\tsimples\n2\ttécnico\n3\texercício "
         "30\n0\tsair\n");

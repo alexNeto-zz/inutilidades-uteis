@@ -5,12 +5,12 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
 
-  while (1 == 1) {
+  while (1) {
     char nome[20];
     int quebra;
 
     printf("Digite o nome do colaborador\n(Digite 0 para sair)\n");
-    scanf("%s", &nome);
+    fgets(nome, 20, stdin);
 
     if (strcmp("0", nome) == 0) break;
 
@@ -21,7 +21,7 @@ int main() {
 
     float valorHoras;
 
-    printf("\nDigite quanto %s recebe por hora: R$ ");
+    printf("\nDigite quanto recebe por hora: R$ ");
     scanf("%f", &valorHoras);
 
     if (quantHoras <= 40)

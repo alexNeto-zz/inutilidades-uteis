@@ -35,7 +35,6 @@ int main() {
         printf(
             "\nDigite apenas letras minusculas\n"
             "não digite números\n");
-        scanf("%c");
         scanf("%c", &letras);
       }
     }
