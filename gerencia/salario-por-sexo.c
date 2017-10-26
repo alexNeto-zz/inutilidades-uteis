@@ -13,7 +13,7 @@ int main() {
   float salario = 0;
   int sexo, corOlhos, corCabelos;
 
-  while (1 == 1) {
+  while (1) {
     printf("\nDigite a idade\t");
     scanf("%d", &idade);
 
@@ -39,6 +39,8 @@ int main() {
 
     if (i == 0) menorIdade = idade;
     if (idade < menorIdade) maiorIdade = idade;
+
+    i++;
   }
 
   media /= j;
@@ -46,7 +48,7 @@ int main() {
   printf("\n A maior idade foi %d anos.\n", maiorIdade);
   printf("\n A menor idade foi %d anos.\n", menorIdade);
   printf("\n A média de salário é %.2f anos.\n", media);
-  printf("\n A quantidade de mulheres com sal�rio menos que R$ 100 é de\n",
+  printf("\n A quantidade de mulheres com salário menos que R$ 100 é de\n",
          quantMenos100);
 
   return 0;

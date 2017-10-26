@@ -9,6 +9,7 @@ int main() {
   float numero, media;
   positivo = 0;
   negativo = 0;
+  media = 0;
 
   for (i = 0; i < 40; i++) {
     printf("Digite um número:\t");

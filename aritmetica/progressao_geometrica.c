@@ -8,7 +8,7 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
 
   int razao, razaon = 1, expoente;
-  int an, an1, a1, n = 1;
+  int an, a1, n = 1;
 
   printf("Digite o primeiro elemento da PG\n");
   scanf("%d", &a1);
@@ -23,7 +23,7 @@ int main() {
       razaon *= razao;
       i++;
     }
-    an1 = a1 * razaon;
+    int an1 = a1 * razaon;
 
     printf("a%d = %d\n", n, an1);
     n++;

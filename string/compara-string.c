@@ -12,7 +12,7 @@ int main() {
   char* resposta1 = "Brasília";
 
   printf("Qual é a capital do Brasil?\nAcentos fazem a diferença\n");
-  scanf("%s", &capital);
+  fgets(capital, 25, stdin);
 
   resp = strcmp(capital, resposta1);
 

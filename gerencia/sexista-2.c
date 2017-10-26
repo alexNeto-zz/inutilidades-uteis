@@ -6,7 +6,7 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
 
-  int i = 0, j = 5, k = 0, x = 0;
+  int i = 0, j = 5, x = 0;
   int quantM = 0;
   int quantF = 0;
   int idade, maiorIdade;

@@ -4,11 +4,11 @@
 
 int main() {
   setlocale(LC_ALL, "Portuguese");
-  float media;
+  float media = 0;
   int i = 0;
   float maior;
   float menor;
-  while (1 == 1) {
+  while (1) {
     int temp;
     printf("\nDigite o %dº número\n(-1 para sair): ", i);
     scanf("%d", &temp);

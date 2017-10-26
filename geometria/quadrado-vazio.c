@@ -16,7 +16,7 @@ int main() {
   while (i < j) {
     int k = 0;
     if (i == 0 || i == j - 1) {
-      while (1 == 1) {
+      while (1) {
         printf("* ");
         if (k == j - 1) break;
         k++;

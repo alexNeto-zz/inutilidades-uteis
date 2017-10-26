@@ -6,7 +6,7 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
 
   int razao;
-  int an, an1, a1, n = 1;
+  int an, a1, n = 1;
 
   printf("Digite o primeiro elemento da PA\n");
   scanf("%d", &a1);
@@ -16,7 +16,7 @@ int main() {
   scanf("%d", &an);
 
   while (n <= an) {
-    an1 = a1 + (n - 1) * razao;
+    int an1 = a1 + (n - 1) * razao;
 
     printf("a%3d = %3d\n", n, an1);
     n++;

@@ -6,8 +6,8 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
 
   int curso, engQuant = 0, engIdade = 0, comQuant = 0, comIdade = 0;
-  int admQuant = 0, admIdade = 0, i, idade, engIdadeTotal, comIdadeTotal,
-      admIdadeTotal;
+  int admQuant = 0, admIdade = 0, i, idade, engIdadeTotal = 0,
+      comIdadeTotal = 0, admIdadeTotal = 0;
 
   for (i = 0; i < 500; ++i) {
     printf("Digite o curso\n1\tengenharia\n2\tcomputação\n3\tadministração\n");

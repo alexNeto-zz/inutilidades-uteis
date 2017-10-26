@@ -22,7 +22,7 @@ int main() {
 
     if (res != x)
       printf("Errou\n");
-    else if (res == x) {
+    else {
       printf("Acertou\n\n\n");
       break;
     }

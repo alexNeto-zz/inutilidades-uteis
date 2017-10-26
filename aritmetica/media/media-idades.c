@@ -7,12 +7,13 @@ int main() {
   setlocale(LC_ALL, "Portuguese");
 
   int i;
-  float numero, idadeT;
+  float numero;
+  float idadeT = 0;
   char nome[15];
 
   for (i = 0; i < 20; i++) {
     printf("Digite um nome:\t");
-    scanf("%s", nome);
+    fgets (nome, 15, stdin);
 
     printf("Digite a idade de %s:\t", nome);
     scanf("%f", &numero);
