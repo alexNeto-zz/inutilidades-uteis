@@ -25,7 +25,6 @@ int main() {
           printf(
               "\nA segunda letra deve vir depois da primeira\nexemplo\nV\ta "
               "--> b\nV\tc --> h\nF\tx --> r\n");
-          scanf("%c");
           scanf("%c", &letras);
         }
       }
