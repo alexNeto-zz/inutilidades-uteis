@@ -18,6 +18,7 @@ public class BonusSalarioSexo {
         salario += 80;
       else
         salario += 250;
+      break;
     default:
       JOptionPane.showMessageDialog(null, "Valor inválido");
       break;
